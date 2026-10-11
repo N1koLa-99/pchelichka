@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пчеличка — кафе-сладкарница с мед от нашия пчелин</title>
+  <meta name="description" content="Пчеличка — кафе-сладкарница с мед и билков чай от собствен пчелин. Медени торти, сладки маси за сватби и рождени дни в цяла България, украса и офис абонаменти.">
+  <meta name="theme-color" content="#1b1209">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 90 27v46L50 96 10 73V27z' fill='%23f2a516'/%3E%3Cpath d='M50 26 70 38v24L50 74 30 62V38z' fill='%231b1209'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/img/comb-frame-1600.jpg" imagesrcset="assets/img/comb-frame-800.jpg 800w, assets/img/comb-frame-1600.jpg 1600w, assets/img/comb-frame-2400.jpg 2400w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261011-1925">
+</head>
+<body>
+
+  <!-- ============ SVG SPRITE ============ -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-hex" viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></symbol>
+    <symbol id="i-bee" viewBox="0 0 64 64">
+      <ellipse cx="22" cy="18" rx="11" ry="15" transform="rotate(-25 22 18)" fill="#fff" fill-opacity=".75" stroke="currentColor" stroke-width="2"/>
+      <ellipse cx="40" cy="17" rx="10" ry="14" transform="rotate(20 40 17)" fill="#fff" fill-opacity=".6" stroke="currentColor" stroke-width="2"/>
+      <ellipse cx="32" cy="38" rx="15" ry="19" fill="#f2a516" stroke="currentColor" stroke-width="2.4"/>
+      <path d="M18 33h28M17.5 41h29M21 49h22" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="32" cy="20" r="7" fill="currentColor"/>
+      <path d="M29 14c-2-5-6-7-8-6M35 14c2-5 6-7 8-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M32 57v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-cake" viewBox="0 0 48 48"><path d="M8 40h32M10 40V26h28v14M10 31c4 3 8 3 10 0 3 3 7 3 10 0 2 3 6 3 8 0M14 26v-5h20v5M24 21v-6M24 15c-2-2-2-4 0-6 2 2 2 4 0 6z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-slice" viewBox="0 0 48 48"><path d="M6 34 40 18v20H6zM6 34l34-16M6 28l20-12 14 2M12 25l4 3 4-4 4 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-cookie" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M17 18h.1M29 16h.1M31 28h.1M19 30h.1M24 23h.1" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 48 48"><path d="M9 18h24v10a10 10 0 0 1-10 10h-4A10 10 0 0 1 9 28zM33 21h3a5 5 0 0 1 0 10h-3M7 42h30M17 6c-2 3 2 5 0 8M24 6c-2 3 2 5 0 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-jar" viewBox="0 0 48 48"><path d="M15 6h18v6H15zM13 12h22l2 5v21a4 4 0 0 1-4 4H15a4 4 0 0 1-4-4V17zM11 22h26v12H11z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M24 25.5 27 27.3v3.4L24 32.5l-3-1.8v-3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 48 48"><path d="M10 38C10 18 22 8 40 8c0 18-10 30-30 30zM10 38 28 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-rings" viewBox="0 0 48 48"><circle cx="18" cy="28" r="11" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="30" cy="28" r="11" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m24 6 3 4-3 4-3-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-balloon" viewBox="0 0 48 48"><path d="M24 30c-7 0-11-7-11-13a11 11 0 0 1 22 0c0 6-4 13-11 13zM22 30h4l-2 3zM24 33c-2 4 2 6 0 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 48 48"><circle cx="24" cy="18" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 42c0-7 5-12 12-12s12 5 12 12M20 18h.1M28 18h.1M21 22c2 1.5 4 1.5 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-case" viewBox="0 0 48 48"><path d="M6 16h36v24H6zM17 16v-5h14v5M6 26h36M21 26v4h6v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 48 48"><path d="M4 12h24v20H4zM28 19h9l7 7v6H28zM12 36a4 4 0 1 0 0 .1M36 36a4 4 0 1 0 0 .1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 48 48"><circle cx="24" cy="20" r="4" fill="currentColor"/><path d="M24 16c-4-8 4-8 0 0zM28 20c8-4 8 4 0 0zM24 24c4 8-4 8 0 0zM20 20c-8 4-8-4 0 0zM24 26v16M24 36c4-4 8-4 10-2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-baklava" viewBox="0 0 48 48"><path d="M24 6 42 24 24 42 6 24zM15 15l18 18M33 15 15 33M24 6v36M6 24h36" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 48 48"><path d="M8 18h32v8H8zM11 26h26v16H11zM24 18v24M24 18c-3-6-12-8-12-2 0 3 6 2 12 2zM24 18c3-6 12-8 12-2 0 3-6 2-12 2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v12a4 4 0 1 1-4-4M14 3c0 3 2.5 5.5 6 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <pattern id="hexpat" width="28" height="48.5" patternUnits="userSpaceOnUse" patternTransform="scale(1.2)">
+      <path d="M14 0 28 8.08v16.17L14 32.33 0 24.25V8.08zM14 32.33V48.5M0 48.5" fill="none" stroke="currentColor" stroke-width="1"/>
+    </pattern>
+  </svg>
+
+  <!-- ============ CURSOR + BEE ============ -->
+  <div class="swarm" aria-hidden="true" data-swarm></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="Пчеличка — начало">
+        <span class="logo__mark">
+          <svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg>
+          <svg class="logo__bee"><use href="#i-bee"/></svg>
+        </span>
+        <span class="logo__text">Пчеличка</span>
+      </a>
+      <nav class="nav__links" aria-label="Основна навигация">
+        <a href="#story">Историята</a>
+        <a href="#menu">Витрината</a>
+        <a href="#honey">Мед и чай</a>
+        <a href="#office">За офиса</a>
+        <a href="#visit">Заведението</a>
+      </nav>
+      <a href="#contact" class="btn btn--honey btn--sm nav__cta magnetic"><span>Запитване</span><svg><use href="#i-arrow"/></svg></a>
+      <button class="burger" aria-label="Меню" aria-expanded="false" data-burger><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu>
+    <nav>
+      <a href="#story">Историята</a>
+      <a href="#menu">Витрината</a>
+      <a href="#honey">Мед и чай</a>
+      <a href="#office">За офиса</a>
+      <a href="#visit">Заведението</a>
+      <a href="#contact">Запитване</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/comb-frame-1600.jpg" srcset="assets/img/comb-frame-800.jpg 800w, assets/img/comb-frame-1600.jpg 1600w, assets/img/comb-frame-2400.jpg 2400w" sizes="100vw" alt="" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow hero__eyebrow"><span class="dot"></span>Отваряме през март 2027</p>
+          <h1 class="hero__title">
+            <span class="line"><span class="word">Сладко</span> <span class="word">с</span> <span class="word">мед</span></span>
+            <span class="line"><span class="word script">от нашия</span></span>
+            <span class="line"><span class="word honey-text">пчелин</span></span>
+          </h1>
+          <p class="hero__lead">Кафе-сладкарница, в която всеки десерт започва от кошера. Медени торти, меденки и билков чай от поляната до пчелите — и сладки маси за празника ти навсякъде в България.</p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--honey magnetic"><span>Виж витрината</span><svg><use href="#i-arrow"/></svg></a>
+            <a href="#contact" class="btn btn--ghost magnetic"><span>Запитване за събитие</span></a>
+          </div>
+        </div>
+        <ul class="hero__chips" aria-label="Накратко">
+          <li class="chip"><strong>30</strong><span>пчелни семейства</span></li>
+          <li class="chip"><strong>100%</strong><span>собствен мед</span></li>
+          <li class="chip"><strong>BG</strong><span>доставка до всеки град</span></li>
+        </ul>
+      </div>
+      <a href="#story" class="scroll-cue" aria-label="Надолу">
+        <span class="scroll-cue__hex"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg><i></i></span>
+        <span>скролни</span>
+      </a>
+      <svg class="drip drip--hero" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 0h1440v38c-40 0-52 10-60 30-6 16-10 40-26 40s-20-24-26-40c-8-20-22-30-60-30-48 0-58 12-66 30-6 14-8 24-20 24s-14-10-20-24c-8-18-20-30-62-30-60 0-70 14-78 34-7 18-10 52-28 52s-22-34-28-52c-8-20-20-34-74-34-50 0-62 10-70 26-6 12-9 22-20 22s-14-10-20-22c-8-16-22-26-70-26-56 0-66 14-74 32-6 14-9 38-24 38s-18-24-24-38c-8-18-20-32-72-32-46 0-58 12-66 28-5 10-8 18-18 18s-13-8-18-18c-8-16-22-28-66-28-60 0-72 16-80 36-7 18-10 46-28 46s-22-28-28-46c-8-20-20-36-70-36-40 0-54 10-62 26-6 12-8 24-20 24S94 76 88 64C80 48 66 38 0 38z"/>
+      </svg>
+      <div class="drops" aria-hidden="true"><i style="--x:9.3%;--d:0s"></i><i style="--x:30.6%;--d:1.2s"></i><i style="--x:49.4%;--d:2.4s"></i><i style="--x:71.6%;--d:.6s"></i><i style="--x:93.8%;--d:1.8s"></i></div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Медена торта „Пчеличка“</span><svg><use href="#i-hex"/></svg>
+        <span>Меденки</span><svg><use href="#i-hex"/></svg>
+        <span>Баклава с мед</span><svg><use href="#i-hex"/></svg>
+        <span>Билков чай „Пчелна поляна“</span><svg><use href="#i-hex"/></svg>
+        <span>Сладки маси</span><svg><use href="#i-hex"/></svg>
+        <span>Медени еклери</span><svg><use href="#i-hex"/></svg>
+        <span>Подаръчни комплекти</span><svg><use href="#i-hex"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ STORY ============ -->
+    <section class="story section" id="story">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow" data-reveal>Историята</p>
+          <h2 class="h2" data-split>От кошера до твоята чиния</h2>
+          <p class="section-head__text" data-reveal>Пътят на меда — от цветето до десерта пред теб.</p>
+        </header>
+
+        <ol class="journey" data-journey data-carousel>
+          <li class="journey__line" aria-hidden="true"><span class="journey__fill" data-journey-fill></span></li>
+
+          <li class="jstep">
+            <figure class="jstep__media">
+              <img src="assets/img/sunflower-bee-1000.jpg" srcset="assets/img/sunflower-bee-1000.jpg 1000w, assets/img/sunflower-bee-2000.jpg 2000w" sizes="(max-width: 960px) 92vw, 560px" alt="Пчела събира нектар от слънчоглед" decoding="async" style="object-position: 58% 50%">
+              <figcaption class="jstep__tag">Поляната</figcaption>
+            </figure>
+            <div class="jstep__body">
+              <span class="jstep__num">01</span>
+              <h3 class="jstep__title">Пчелите събират нектар от нашата поляна</h3>
+              <p>Мента, маточина, мащерка и липа — храна за пчелите и билки за нашия чай.</p>
+              <span class="jstep__chip"><svg><use href="#i-check"/></svg>Мед и чай от една поляна</span>
+            </div>
+            <span class="jstep__node" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg></span>
+          </li>
+
+          <li class="jstep jstep--rev">
+            <figure class="jstep__media">
+              <img src="assets/img/hives-800.jpg" srcset="assets/img/hives-800.jpg 800w, assets/img/hives-1400.jpg 1400w" sizes="(max-width: 960px) 92vw, 560px" alt="Цветни кошери в редица на поляна" decoding="async" style="object-position: 50% 50%">
+              <figcaption class="jstep__tag">Пчелинът</figcaption>
+            </figure>
+            <div class="jstep__body">
+              <span class="jstep__num">02</span>
+              <h3 class="jstep__title">30 семейства, за които се грижим сами</h3>
+              <p>Наш, регистриран пчелин под ветеринарен контрол.</p>
+              <span class="jstep__chip"><svg><use href="#i-check"/></svg>≈20 кг мед от кошер</span>
+            </div>
+            <span class="jstep__node" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg></span>
+          </li>
+
+          <li class="jstep">
+            <figure class="jstep__media">
+              <img src="assets/img/frame-honey-800.jpg" srcset="assets/img/frame-honey-800.jpg 800w, assets/img/frame-honey-1600.jpg 1600w" sizes="(max-width: 960px) 92vw, 560px" alt="Пчелар вади рамка с мед и пчели от кошера" decoding="async" style="object-position: 45% 50%">
+              <figcaption class="jstep__tag">Рамката</figcaption>
+            </figure>
+            <div class="jstep__body">
+              <span class="jstep__num">03</span>
+              <h3 class="jstep__title">Вадим меда рамка по рамка</h3>
+              <p>Само узрял, запечатан мед — с партиден номер на всеки буркан.</p>
+              <span class="jstep__chip"><svg><use href="#i-check"/></svg>Знаем кошера на всяка лъжица</span>
+            </div>
+            <span class="jstep__node" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg></span>
+          </li>
+
+          <li class="journey__end">
+            <span class="jstep__node jstep__node--end" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg></span>
+            <div class="journey__card">
+              <span class="jstep__num">04</span>
+              <h3 class="jstep__title">А после — в кухнята и на масата ти</h3>
+              <p>Медът става крем, глазура и пълнеж — и пристига при теб, където и да си.</p>
+              <div class="journey__actions">
+                <a href="#menu" class="btn btn--honey magnetic"><span>Виж витрината</span><svg><use href="#i-arrow"/></svg></a>
+                <a href="#contact" class="btn btn--line magnetic"><span>Запитване за събитие</span></a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ APIARY VIDEO ============ -->
+    <section class="apiary screen" id="apiary" aria-label="Пчелинът">
+      <div class="apiary__frame" data-apiary-frame>
+        <video class="apiary__video" autoplay muted loop playsinline preload="auto" poster="assets/img/apiary-poster.jpg" data-apiary-video>
+          <source src="assets/video/apiary.mp4" type="video/mp4">
+          <source src="assets/video/apiary.webm" type="video/webm">
+        </video>
+        <div class="apiary__shade"></div>
+        <div class="container apiary__content">
+          <p class="eyebrow eyebrow--light" data-reveal>Пчелинът</p>
+          <h2 class="h2 apiary__title" data-split>Тук започва всеки десерт</h2>
+          <p class="apiary__text" data-reveal>Рамка по рамка, кошер по кошер. Знаем откъде е всяка лъжица мед, защото сами сме я извадили.</p>
+          <ul class="apiary__stats">
+            <li data-reveal><strong>30</strong><span>пчелни семейства</span></li>
+            <li data-reveal><strong>≈20 кг</strong><span>мед от кошер за сезон</span></li>
+            <li data-reveal><strong>0</strong><span>посредници</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu section screen" id="menu">
+      <div class="container">
+        <header class="menu__head">
+          <div>
+            <p class="eyebrow" data-reveal>Витрината</p>
+            <h2 class="h2" data-split>Всичко с капка мед</h2>
+          </div>
+          <div class="tabs" role="tablist" data-tabs>
+            <button role="tab" aria-selected="true" data-tab="cafe">Сладкарница</button>
+            <button role="tab" aria-selected="false" data-tab="cakes">Торти по поръчка</button>
+            <button role="tab" aria-selected="false" data-tab="gifts">Мед и подаръци</button>
+            <span class="tabs__pill" aria-hidden="true"></span>
+          </div>
+        </header>
+
+        <div class="menu__layout" data-menu>
+          <article class="feature" data-feature aria-live="polite"></article>
+          <ul class="menu__list" data-menu-list></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONEY / JAR ============ -->
+    <section class="honey section screen" id="honey">
+      <div class="honey__bg" aria-hidden="true"></div>
+      <div class="container honey__inner">
+        <figure class="honey__photo">
+          <img src="assets/img/honey-jar-1000.jpg" srcset="assets/img/honey-jar-600.jpg 600w, assets/img/honey-jar-1000.jpg 1000w" sizes="(max-width: 960px) 92vw, 560px" alt="Мед се стича от дървена лъжица в стъклен буркан, вързан с канап" decoding="async" data-parallax>
+          <figcaption class="honey__badge"><strong>400 г</strong><span>от нашия пчелин</span></figcaption>
+        </figure>
+        <div class="honey__content">
+          <p class="eyebrow eyebrow--light" data-reveal>Мед и билков чай</p>
+          <h2 class="h2" data-split>Една поляна, два продукта</h2>
+          <p class="lead-light" data-reveal>Цветята около кошерите хранят пчелите и стават билков чай „Пчелна поляна“. Сушим ги внимателно, смесваме по рецепта и пакетираме с партиден номер — като всяка истинска храна.</p>
+
+          <ul class="honey__list">
+            <li data-reveal><span class="honey__qty">400 г</span><span class="honey__name">Буркан мед</span><span class="honey__price">7,50 €</span></li>
+            <li data-reveal><span class="honey__qty">700 г</span><span class="honey__name">Буркан мед</span><span class="honey__price">12,00 €</span></li>
+            <li data-reveal><span class="honey__qty">40 г</span><span class="honey__name">Билков чай „Пчелна поляна“</span><span class="honey__price">5,50 €</span></li>
+            <li data-reveal><span class="honey__qty">кутия</span><span class="honey__name">Подаръчен комплект: мед, меденки, чай</span><span class="honey__price">20–45 €</span></li>
+          </ul>
+
+          <div class="herbs" data-reveal>
+            <span>мента</span><span>маточина</span><span>мащерка</span><span>лайка</span><span>невен</span><span>липов цвят</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ OPEN DAY ============ -->
+    <section class="openday-sec section screen" aria-label="Ден на отворения пчелин">
+      <div class="container">
+        <article class="open-day" data-open-day>
+          <figure class="open-day__media">
+            <img src="assets/img/beekeeper-800.jpg" srcset="assets/img/beekeeper-800.jpg 800w, assets/img/beekeeper-1600.jpg 1600w" sizes="(max-width: 960px) 92vw, 640px" alt="Пчелар в защитен костюм държи рамка, покрита с пчели" decoding="async">
+          </figure>
+          <div class="open-day__body">
+            <p class="eyebrow eyebrow--light">Ден на отворения пчелин</p>
+            <h3 class="h3">Ела да видиш кошерите отблизо</h3>
+            <p>Веднъж в сезона отваряме пчелина за гости. Вадим рамка с пита, разказваме как работят пчелите и опитваме мед направо от килийките, с чаша чай от поляната.</p>
+            <a href="#contact" class="btn btn--honey magnetic"><span>Запиши ме за следващия</span><svg><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ OFFICE ============ -->
+    <section class="office section screen" id="office">
+      <svg class="bg-hex bg-hex--light" aria-hidden="true"><rect width="100%" height="100%" fill="url(#hexpat)"/></svg>
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light" data-reveal>Служебен абонамент</p>
+          <h2 class="h2" data-split>Сладко в офиса всяка седмица</h2>
+          <p class="section-head__text" data-reveal>Пресни десерти и меденки на фиксирана месечна цена. Доставяме сутрин, преди обедната пауза.</p>
+        </header>
+
+        <div class="plans" data-carousel data-start="1">
+          <article class="plan" data-tilt>
+            <div class="plan__top"><span class="plan__badge">до 8 души</span><h3 class="h4">Офис сладко</h3></div>
+            <div class="plan__price"><strong>90</strong><span>€ / месец</span></div>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>1 доставка седмично</li>
+              <li><svg><use href="#i-check"/></svg>Десерти и меденки</li>
+              <li><svg><use href="#i-check"/></svg>Договор за 6 или 12 месеца</li>
+            </ul>
+            <a href="#contact" class="btn btn--line btn--block"><span>Избирам</span></a>
+          </article>
+
+          <article class="plan plan--featured" data-tilt>
+            <div class="plan__ribbon">най-избиран</div>
+            <div class="plan__top"><span class="plan__badge">до 15 души</span><h3 class="h4">Офис комфорт</h3></div>
+            <div class="plan__price"><strong>170</strong><span>€ / месец</span></div>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>2 доставки седмично</li>
+              <li><svg><use href="#i-check"/></svg>Десерти и топли напитки</li>
+              <li><svg><use href="#i-check"/></svg>Сезонни изненади</li>
+            </ul>
+            <a href="#contact" class="btn btn--honey btn--block"><span>Избирам</span><svg><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="plan" data-tilt>
+            <div class="plan__top"><span class="plan__badge">до 25 души</span><h3 class="h4">Офис премиум</h3></div>
+            <div class="plan__price"><strong>320</strong><span>€ / месец</span></div>
+            <ul>
+              <li><svg><use href="#i-check"/></svg>Ежедневна доставка</li>
+              <li><svg><use href="#i-check"/></svg>Сезонно меню</li>
+              <li><svg><use href="#i-check"/></svg>Подаръчни кутии за партньори</li>
+            </ul>
+            <a href="#contact" class="btn btn--line btn--block"><span>Избирам</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="numbers" aria-label="В числа">
+      <div class="container numbers__grid">
+        <div class="num"><strong data-counter="60">0</strong><span>пчелни семейства до третата година</span></div>
+        <div class="num"><strong data-counter="1200" data-suffix=" кг">0</strong><span>мед годишно от нашия пчелин</span></div>
+        <div class="num"><strong data-counter="105">0</strong><span>събития годишно из страната</span></div>
+        <div class="num"><strong data-counter="48" data-suffix=" ч">0</strong><span>до оферта за твоето събитие</span></div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit section screen" id="visit">
+      <div class="container visit__inner">
+        <div class="visit__content">
+          <p class="eyebrow" data-reveal>Заведението</p>
+          <h2 class="h2" data-split>Малко място с голяма витрина</h2>
+          <p class="section-head__text" data-reveal>13 места, прозорец към улицата и кухня точно зад бара. Ела за кафе и парче медена торта или седни на голямата маса, за да измислим тортата за празника ти.</p>
+
+          <ul class="visit__info" data-carousel>
+            <li data-reveal><svg><use href="#i-pin"/></svg><div><strong>Адрес</strong><span>Обявяваме скоро — следи ни в социалните мрежи</span></div></li>
+            <li data-reveal><svg><use href="#i-clock"/></svg><div><strong>Откриване</strong><span>Началото на март 2027, с дегустация за всички</span></div></li>
+            <li data-reveal><svg><use href="#i-cup"/></svg><div><strong>Билков чай</strong><span>„Пчелна поляна“ — 2,20 € за чаша</span></div></li>
+          </ul>
+        </div>
+
+        <div class="floor" data-floor>
+          <div class="floor__scroll" data-floor-scroll>
+          <div class="floor__map">
+          <svg viewBox="0 0 780 400" class="floor__svg" role="img" aria-label="Схема на залата отгоре">
+            <rect class="f-floor" x="0" y="0" width="780" height="400" rx="18"/>
+            <rect class="f-bar" x="420" y="0" width="360" height="200"/>
+            <!-- window counter + stools -->
+            <rect class="f-wood" x="15" y="357" width="425" height="35" rx="6"/>
+            <g class="f-stool"><circle cx="60" cy="332" r="16"/><circle cx="140" cy="332" r="16"/><circle cx="220" cy="332" r="16"/><circle cx="300" cy="332" r="16"/><circle cx="380" cy="332" r="16"/></g>
+            <!-- banquette -->
+            <rect class="f-bench" x="10" y="70" width="45" height="195" rx="10"/>
+            <rect class="f-table" x="62" y="90" width="60" height="60" rx="8"/><rect class="f-chair" x="128" y="100" width="40" height="40" rx="8"/>
+            <rect class="f-table" x="62" y="190" width="60" height="60" rx="8"/><rect class="f-chair" x="128" y="200" width="40" height="40" rx="8"/>
+            <!-- T3 -->
+            <rect class="f-table" x="235" y="113" width="120" height="75" rx="10"/>
+            <rect class="f-chair" x="245" y="64" width="40" height="40" rx="8"/><rect class="f-chair" x="305" y="64" width="40" height="40" rx="8"/>
+            <rect class="f-chair" x="245" y="197" width="40" height="40" rx="8"/><rect class="f-chair" x="305" y="197" width="40" height="40" rx="8"/>
+            <!-- bar front counter -->
+            <rect class="f-wood" x="420" y="140" width="60" height="60"/>
+            <rect class="f-serve" x="480" y="140" width="70" height="60"/>
+            <rect class="f-till" x="550" y="140" width="70" height="60"/>
+            <rect class="f-cold" x="620" y="140" width="155" height="60"/>
+            <!-- back bar -->
+            <rect class="f-hot" x="425" y="5" width="145" height="52"/>
+            <rect class="f-steel" x="570" y="5" width="50" height="52"/>
+            <rect class="f-cold" x="620" y="5" width="70" height="52"/>
+            <!-- honey stand -->
+            <rect class="f-herb" x="742" y="225" width="33" height="150" rx="4"/>
+            <!-- door -->
+            <path class="f-door" d="M630 400 A 90 90 0 0 1 720 310 M720 400 V 310"/>
+            <path class="f-route" d="M675 450 L675 300 L695 240 L585 240 L515 240 L430 265 L300 265 L220 205"/>
+            <text class="f-label" x="360" y="380">прозоречен плот</text>
+          </svg>
+
+          <button class="hotspot" style="--x:89%;--y:42%" data-tip="Витрина с торти и десерти — студената точка"><span>1</span></button>
+          <button class="hotspot" style="--x:75%;--y:42%" data-tip="Каса — поръчка и плащане"><span>2</span></button>
+          <button class="hotspot" style="--x:66%;--y:42%" data-tip="Издаване на кафето и десерта"><span>3</span></button>
+          <button class="hotspot" style="--x:63%;--y:8%" data-tip="Кафемашина и чайник за билков чай — топлата точка"><span>4</span></button>
+          <button class="hotspot" style="--x:38%;--y:38%" data-tip="Голямата маса за 4 — и за консултации за торти"><span>5</span></button>
+          <button class="hotspot" style="--x:28%;--y:83%" data-tip="Прозоречен плот с 5 високи стола"><span>6</span></button>
+          <button class="hotspot" style="--x:97.5%;--y:75%" data-tip="Щанд с мед и билков чай"><span>7</span></button>
+          </div>
+          </div>
+          <p class="floor__hint" aria-hidden="true"><svg><use href="#i-arrow"/></svg>плъзни, за да видиш цялата зала</p>
+          <div class="floor__tip" data-floor-tip>Посочи номер, за да видиш какво има там</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section screen" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__aside">
+          <p class="eyebrow eyebrow--light" data-reveal>Запитване</p>
+          <h2 class="h2" data-split>Разкажи ни за празника</h2>
+          <p class="lead-light" data-reveal>Дата, място и брой гости стигат за начало. Връщаме оферта до 48 часа, а ако искаш, те каним и на дегустация.</p>
+          <ul class="contact__links">
+            <li data-reveal><svg><use href="#i-phone"/></svg><a href="tel:+359000000000">+359 00 000 0000</a></li>
+            <li data-reveal><svg><use href="#i-mail"/></svg><a href="mailto:hello@pchelichka.bg">hello@pchelichka.bg</a></li>
+          </ul>
+          <div class="socials" data-reveal>
+            <a href="#" aria-label="Instagram" class="magnetic"><svg><use href="#i-insta"/></svg></a>
+            <a href="#" aria-label="Facebook" class="magnetic"><svg><use href="#i-fb"/></svg></a>
+            <a href="#" aria-label="TikTok" class="magnetic"><svg><use href="#i-tiktok"/></svg></a>
+          </div>
+        </div>
+
+        <form class="form" data-form novalidate>
+          <div class="form__row">
+            <label class="field"><input type="text" name="name" placeholder=" " required><span>Име</span></label>
+            <label class="field"><input type="tel" name="phone" placeholder=" " required><span>Телефон</span></label>
+          </div>
+          <div class="form__row">
+            <label class="field"><input type="date" name="date" placeholder=" "><span class="is-up">Дата на събитието</span></label>
+            <label class="field"><input type="text" name="place" placeholder=" "><span>Град / зала</span></label>
+          </div>
+          <fieldset class="choice">
+            <legend>Повод</legend>
+            <label><input type="radio" name="type" value="сватба" checked><span>Сватба</span></label>
+            <label><input type="radio" name="type" value="рожден ден"><span>Рожден ден</span></label>
+            <label><input type="radio" name="type" value="кръщене"><span>Кръщене</span></label>
+            <label><input type="radio" name="type" value="фирмено"><span>Фирмено</span></label>
+            <label><input type="radio" name="type" value="абонамент"><span>Офис абонамент</span></label>
+          </fieldset>
+          <label class="field"><textarea name="msg" rows="3" placeholder=" "></textarea><span>Брой гости, вкусове, идеи…</span></label>
+          <button class="btn btn--honey btn--block btn--lg magnetic" type="submit"><span>Изпрати запитването</span><svg><use href="#i-arrow"/></svg></button>
+          <p class="form__ok" data-form-ok role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <svg class="drip drip--footer" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0h1440v20c-50 0-60 8-68 22-6 10-8 30-22 30s-16-20-22-30c-8-14-20-22-70-22-60 0-70 10-78 26-6 12-9 36-24 36s-18-24-24-36c-8-16-20-26-80-26-54 0-64 10-72 24-5 8-7 18-17 18s-12-10-17-18c-8-14-20-24-76-24-48 0-60 10-68 26-6 12-9 30-24 30s-18-18-24-30c-8-16-20-26-74-26-56 0-68 10-76 24-6 10-8 26-21 26s-15-16-21-26c-8-14-20-24-80-24-50 0-62 10-70 28-6 14-8 34-24 34s-18-20-24-34C126 30 114 20 0 20z"/>
+    </svg>
+    <div class="container">
+      <div class="footer__big" aria-hidden="true">Пчеличка</div>
+      <div class="footer__grid">
+        <div>
+          <a href="#top" class="logo logo--footer"><span class="logo__mark"><svg viewBox="0 0 100 100"><path d="M50 3 91 26.5v47L50 97 9 73.5v-47z"/></svg><svg class="logo__bee"><use href="#i-bee"/></svg></span><span class="logo__text">Пчеличка</span></a>
+          <p>Кафе-сладкарница с мед и билков чай от собствен пчелин. Сладки маси, украса и офис абонаменти в цяла България.</p>
+        </div>
+        <nav aria-label="Долна навигация">
+          <h4>Разгледай</h4>
+          <a href="#menu">Витрината</a><a href="#honey">Мед и чай</a><a href="#office">За офиса</a>
+        </nav>
+        <div>
+          <h4>Пиши ни</h4>
+          <a href="mailto:hello@pchelichka.bg">hello@pchelichka.bg</a>
+          <a href="tel:+359000000000">+359 00 000 0000</a>
+        </div>
+        <div>
+          <h4>Отваряме</h4>
+          <p>март 2027<br>адресът — скоро</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2027</span> „Пчеличка“ ООД</span>
+        <a href="#top" class="to-top magnetic" aria-label="Нагоре"><svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/gsap.min.js"></script>
+  <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js?v=20261011-1925"></script>
+</body>
+</html>
