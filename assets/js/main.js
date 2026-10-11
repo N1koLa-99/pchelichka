@@ -499,6 +499,7 @@
     const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
     tl.from(".hero__media img", { scale: 1.25, opacity: 0, duration: 2.2, ease: "power3.out", clearProps: "transform,opacity" }, 0)
       .from(".hero__title .word", { yPercent: 120, rotate: 8, duration: 1.4, stagger: 0.08 }, 0.15)
+      .fromTo(".hero__mark", { "--u": 0 }, { "--u": 1, duration: 0.9, ease: "expo.inOut" }, 0.9)
       .from(".hero__eyebrow", { y: 20, opacity: 0, duration: 1 }, 0.1)
       .from(".hero__lead", { y: 30, opacity: 0, duration: 1.2 }, 0.6)
       .from(".hero__actions", { y: 30, opacity: 0, duration: 1 }, 0.75)
